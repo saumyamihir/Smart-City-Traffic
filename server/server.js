@@ -1,3 +1,5 @@
+
+const placeRoute = require("./routes/place");
 const express = require("express");
 const cors = require("cors");
 
@@ -12,8 +14,11 @@ app.use(express.json());
 app.use("/api", route);
 app.use("/api", cityRoute);
 
+app.use("/api", placeRoute);
+
 const PORT = 5000;
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
+
