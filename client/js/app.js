@@ -2,7 +2,7 @@ async function loadCities() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/cities");
+        const response = await fetch("https://smart-city-traffic-nrhi.onrender.com/api/cities");
 
         const cities = await response.json();
 
@@ -52,7 +52,7 @@ async function findRoute() {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/route?source=${source}&destination=${destination}&vehicle=${vehicle}`
+            `https://smart-city-traffic-nrhi.onrender.com/api/route?source=${source}&destination=${destination}&vehicle=${vehicle}`
         );
 
         const data = await response.json();
@@ -72,7 +72,7 @@ async function findRoute() {
         highlightedPath = data.path;
         drawGraph();
         drawRouteOnMap(data.path);
-        
+
         loadNearbyPlaces(source);
 
         document.getElementById("result").innerHTML = `
@@ -100,7 +100,7 @@ ${data.traffic}
 
 </p>
 
-<p>⏱️ <b>Estimated Time:</b> ${data.estimatedTime}</p>
+<p>⏱️ <b>Estimated Time :</b> ${data.estimatedTime}</p>
 
 <p>⛽ <b>Fuel Cost :</b> ₹${data.fuelCost}</p>
 
@@ -143,7 +143,7 @@ async function loadNearbyPlaces(city) {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/places?city=${city}`
+            `https://smart-city-traffic-nrhi.onrender.com/api/places?city=${city}`
         );
 
         const places = await response.json();
