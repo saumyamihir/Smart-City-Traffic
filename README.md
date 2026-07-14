@@ -1,52 +1,126 @@
 # 🚦 Smart City Traffic Management System
 
-A Smart City Traffic Management System built using **Graph Data Structure**, **Dijkstra Algorithm**, **BFS**, **Node.js**, **Express.js**, **HTML**, **CSS**, **JavaScript**, and **Leaflet Maps**.
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
-This project helps users find the shortest route between cities, visualize the route on a graph and map, estimate travel time and fuel cost, and view nearby places.
+A modern **Smart City Traffic Management System** developed using **Graph Data Structure**, **Dijkstra Algorithm**, **BFS**, **Node.js**, **Express.js**, **HTML**, **CSS**, **JavaScript**, and **Leaflet.js**.
+
+The system helps users find the shortest route between cities, visualize the network on an interactive graph and map, estimate travel time, calculate fuel cost, and explore nearby places.
 
 ---
 
 ## 🌐 Live Demo
 
-### Frontend
+### 🚀 Frontend
 https://smart-city-traffic.netlify.app
 
-### Backend API
+### ⚙️ Backend API
 https://smart-city-traffic-nrhi.onrender.com
 
+### 💻 GitHub Repository
+https://github.com/saumyamihir/Smart-City-Traffic
+
 ---
 
-## 📌 Features
+# 📸 Project Screenshots
 
-- 🚗 Shortest Path using Dijkstra Algorithm
+## 🏠 Home Page
+
+![Home](client/assets/Home.png)
+
+---
+
+## 🗺️ City Network Graph
+
+![Graph](client/assets/City_Network.png)
+
+---
+
+## 🌍 Interactive Live Map
+
+![Map](client/assets/Live_Map.png)
+
+---
+
+## 🚦 Route Summary
+
+![Route](client/assets/Route.png)
+
+---
+
+## 📋 Route Details
+
+![Summary](client/assets/Route_Summary.png)
+
+---
+
+# ✨ Features
+
+- 🚗 Shortest Route Finder
+- 🧠 Dijkstra Algorithm
 - 🌐 Graph Data Structure
-- 🗺️ Interactive Map using Leaflet & OpenStreetMap
-- 📍 Route Highlight on Graph
-- 📍 Route Highlight on Map
-- 🏥 Nearby Places
-- ⛽ Fuel Cost Estimation
+- 🔍 BFS Traversal
+- 🗺️ Interactive Leaflet Map
+- 📍 Route Highlighting
+- 🚦 Traffic Information
 - ⏱️ Estimated Travel Time
-- 🚦 Traffic Status
-- 📱 Responsive UI
+- ⛽ Fuel Cost Estimation
+- 🏥 Nearby Places
+- 📱 Responsive User Interface
 
 ---
 
-## 🧠 Algorithms Used
+# 🧠 Algorithms Used
 
-### Graph
-Cities are represented as nodes and roads are represented as weighted edges.
+## 📌 Graph Data Structure
 
-### Dijkstra Algorithm
-Calculates the shortest path between source and destination.
-
-### BFS
-Used for graph traversal and future route exploration.
+- Cities are represented as **Nodes**
+- Roads are represented as **Weighted Edges**
+- Used to build the complete transportation network.
 
 ---
 
-## 🛠 Tech Stack
+## 📌 Dijkstra Algorithm
 
-### Frontend
+Used to calculate the shortest route between the selected source and destination cities.
+
+### Workflow
+
+```
+Source
+   │
+   ▼
+Graph
+   │
+   ▼
+Dijkstra Algorithm
+   │
+   ▼
+Shortest Route
+```
+
+---
+
+## 📌 Breadth First Search (BFS)
+
+Used for graph traversal and connectivity between cities.
+
+Future improvements can use BFS for:
+
+- Nearest city search
+- Minimum stop routes
+- Emergency vehicle routing
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
 
 - HTML5
 - CSS3
@@ -54,27 +128,33 @@ Used for graph traversal and future route exploration.
 - Leaflet.js
 - OpenStreetMap
 
-### Backend
+## Backend
 
 - Node.js
 - Express.js
 
-### Deployment
+## Deployment
 
 - Netlify
 - Render
 
+## Version Control
+
+- Git
+- GitHub
+
 ---
 
-## 📂 Project Structure
+# 📂 Folder Structure
 
 ```
 Smart-City-Traffic
 │
 ├── client
+│   ├── assets
 │   ├── css
 │   ├── js
-│   ├── index.html
+│   └── index.html
 │
 ├── server
 │   ├── algorithms
@@ -89,7 +169,7 @@ Smart-City-Traffic
 
 ---
 
-## 🚀 Installation
+# ⚙️ Installation
 
 Clone the repository
 
@@ -97,7 +177,7 @@ Clone the repository
 git clone https://github.com/saumyamihir/Smart-City-Traffic.git
 ```
 
-Go to project
+Move into the project directory
 
 ```bash
 cd Smart-City-Traffic
@@ -110,47 +190,61 @@ cd server
 npm install
 ```
 
-Start server
+Start the backend server
 
 ```bash
 npm start
 ```
 
-Open
-
-```
-client/index.html
-```
-
-using Live Server.
+Open the frontend using **Live Server**.
 
 ---
 
-## 📸 Screenshots
+# 🚦 Route Calculation
 
-### Home Page
-![Home](assets/Home.png)
+The system performs the following steps:
 
-### Route Finder
-
-![Route Finder](assets/Route.png)
-
-
-### City Network Graph
-
-![City Network Graph ](assets/City_Network.png)
-
-### Interactive Map
-
-![Live Map](assets/Live_Map.png)
-
-### Route Summary
-
-![Route Summary](assets/Route_Summary.png)
+```
+User Input
+     │
+     ▼
+Select Source & Destination
+     │
+     ▼
+Graph Construction
+     │
+     ▼
+Dijkstra Algorithm
+     │
+     ▼
+Shortest Route
+     │
+     ▼
+Traffic Analysis
+     │
+     ▼
+Travel Time
+Fuel Cost
+Nearby Places
+Graph Highlight
+Map Highlight
+```
 
 ---
 
-## 👨‍💻 Developer
+# 🎯 Future Enhancements
+
+- 🤖 AI-based Traffic Prediction
+- 📡 Live Traffic API Integration
+- 🚑 Emergency Vehicle Routing
+- 📍 GPS Navigation
+- 🌙 Dark Mode
+- 📊 Traffic Analytics Dashboard
+- 🔔 Real-time Traffic Alerts
+
+---
+
+# 👨‍💻 Developer
 
 **Saumya Mihir**
 
@@ -159,6 +253,10 @@ https://github.com/saumyamihir
 
 ---
 
-## 📜 License
+# 📄 License
 
-This project is developed for educational and internship purposes.
+This project is developed for **educational**, **internship**, and **learning** purposes.
+
+---
+
+## ⭐ If you like this project, don't forget to give it a Star on GitHub!
