@@ -129,24 +129,24 @@ using Live Server.
 ## 📸 Screenshots
 
 ### Home Page
-
-(Add Screenshot)
+![Home](assets/Home.png)
 
 ### Route Finder
 
-(Add Screenshot)
+![Route Finder](assets/Route.png)
+
 
 ### City Network Graph
 
-(Add Screenshot)
+![City Network Graph ](assets/City_Network.png)
 
 ### Interactive Map
 
-(Add Screenshot)
+![Live Map](assets/Live_Map.png)
 
 ### Route Summary
 
-(Add Screenshot)
+![Route Summary](assets/Route_Summary.png)
 
 ---
 
