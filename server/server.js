@@ -22,3 +22,7 @@ app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
 
+app.get("/", (req, res) => {
+    res.send("🚦 Smart City Traffic Management Backend is Running Successfully!");
+});
+
