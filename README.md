@@ -247,6 +247,8 @@ Map Highlight
 # 👨‍💻 Developer
 
 **Saumya Mihir**
+**Naureen**
+**Shubham Yadav*
 
 GitHub:
 https://github.com/saumyamihir
